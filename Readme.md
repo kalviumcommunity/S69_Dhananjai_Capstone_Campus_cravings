@@ -61,54 +61,37 @@ Real-Time Updates: Socket.io, Firebase Cloud Messaging
 
 
 Campus craving project timeline.
-
 Week 1: Planning, UI/UX Design & Initial Setup (Day 1-7)
  Day 1-2: Planning & Initial Setup
  Define project scope, user flow, and finalize feature list.
  Create a GitHub project (setup README, issues, and milestones).
  Set up GitHub Projects to track daily progress (proof of 10+ entries).
-
-
 Day 3-4: UI/UX Design (Low-Fidelity & High-Fidelity)
  Create Low-Fidelity Wireframes (sketch navigation and layouts).
  Convert to High-Fidelity Design (Figma or Adobe XD).
  Ensure design consistency across User, Vendor, and Courier interfaces.
- 
- 
  Day 5-6: Tech Stack & Initial Repos
  Initialize backend repo (Node.js + Express.js).
  Initialize frontend repo (React.js + Tailwind CSS).
  Create bruno API collection for API testing.
  Set up MongoDB Atlas (cloud database).
- 
- 
  Day 7: Database Schema & API Setup
  Design database schema for Users, Orders, Restaurants, and Couriers.
  Implement GET API (Fetch user, orders, and vendors).
  Implement POST API (Create new orders, register users).
 
-
-
-
 Week 2: Backend Development & Authentication (Day 8-14)
-
  Day 8-9: CRUD Operations & API Implementation
  Implement PUT API (Update user details, restaurant menus).
  Implement DELETE API (Remove orders, users, restaurants).
  Define relationships between database entities (Mongoose Models).
-
-
  Day 10-11: Backend Deployment & JWT Authentication
  Deploy backend to Render/Railway.
  Implement authentication using JWT (Sign up, login, protected routes).
  Implement Password Hashing with bcrypt.js.
-
-
  Day 12-13: OAuth Authentication (Google Login)
  Implement Google OAuth authentication.
  Ensure smooth login for students (Campus Email or Google).
-
-
  Day 14: Database Read & Write Testing
  Test all CRUD APIs using Bruno/Postman.
  Store & retrieve user, order, and menu data in MongoDB.
@@ -116,26 +99,16 @@ Week 2: Backend Development & Authentication (Day 8-14)
 
 
 Week 3: Frontend Development & UI Implementation (Day 15-21)
-
-
 Day 15-16: Initialize Frontend & React Components
  Initialize React app & set up React Router.
  Implement global state management (Redux Toolkit).
  Create reusable UI components (Buttons, Cards, Forms).
-
-
  Day 17-18: Implement Authentication in Frontend
  Implement JWT authentication in React (Login/Register UI).
  Integrate Google Login with React.
-
-
-
  Day 19-20: Fetching & Displaying Data from APIs
  Implement GET API in frontend (fetching menus, orders, and vendors).
  Display fetched data in responsive UI components.
-
-
-
  Day 21: Deploy Frontend & Connect with Backend
  Deploy frontend using Vercel/Netlify.
  Connect frontend with backend APIs (Live data flow).
@@ -143,32 +116,19 @@ Day 15-16: Initialize Frontend & React Components
 
 
 Week 4: Advanced Features & Testing (Day 22-30)
-
  Day 22-23: Implement Order & Delivery System
  Implement POST API to place new orders from frontend.
  Display active orders for students & delivery personnel.
-
-
-
  Day 24-25: File Upload Functionality
  Implement Cloudinary/Firebase for menu & profile picture uploads.
  Users can upload images while placing orders.
-
-
-
  Day 26-27: Implement Update & Delete Features
  Implement PUT API to update order status.
  Implement DELETE API to allow users to cancel orders.
-
-
-
  Day 28-29: Final Testing & Debugging
  Test all API integrations with Bruno/Postman.
  Fix bugs and UI inconsistencies.
  Ensure smooth order tracking & delivery assignment.
-
-
-
  Day 30: Final Deployment & Launch
  Deploy final backend and frontend versions.
  Perform end-to-end testing.
