@@ -31,7 +31,7 @@ const orderSchema = new mongoose.Schema(
     },
     delivery_partner_id: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "DeliveryPartner",
+      ref: "DeliveryPartner",4
       default: null,
     },
     status: {
