@@ -44,6 +44,7 @@ const deliveryStudentSchema = new mongoose.Schema(
     },
     assigned_orders: [
       {
+         // relation between delivery student and order
         order_id: { type: mongoose.Schema.Types.ObjectId, ref: "Order" },
         status: {
           type: String,
