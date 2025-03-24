@@ -19,7 +19,8 @@ const orderSchema = new mongoose.Schema(
     },
     items: [
       {
-        item_id: { type: mongoose.Schema.Types.ObjectId, ref: "Item", required: true },
+        // reltaion between items(menu) and order
+        item_id: { type: mongoose.Schema.Types.ObjectId, ref: "Item", required: true },  
         name: { type: String, required: true },
         quantity: { type: Number, required: true },
         price: { type: Number, required: true },
@@ -30,8 +31,9 @@ const orderSchema = new mongoose.Schema(
       required: true,
     },
     delivery_partner_id: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "DeliveryPartner",4
+      // relation between deliery partner and order
+      type: mongoose.Schema.Types.ObjectId, 
+      ref: "DeliveryPartner", 
       default: null,
     },
     status: {
