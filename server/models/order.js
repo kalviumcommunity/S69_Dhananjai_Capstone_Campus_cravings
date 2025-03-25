@@ -19,7 +19,7 @@ const orderSchema = new mongoose.Schema(
     },
     items: [
       {
-        // reltaion between items(menu) and order
+        // relation between items(menu) and order
         item_id: { type: mongoose.Schema.Types.ObjectId, ref: "Item", required: true },  
         name: { type: String, required: true },
         quantity: { type: Number, required: true },
