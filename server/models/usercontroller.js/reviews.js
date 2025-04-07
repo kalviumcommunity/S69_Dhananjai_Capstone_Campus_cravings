@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const Review = require("../models/Review");
+const { get } = require("express/lib/response");
 
 // Submit a restaurant review
 const review =  async (req, res) => {
@@ -14,4 +15,24 @@ const review =  async (req, res) => {
   }
 };
 
-module.exports =review;
+
+ const getAllReviews = async (req, res) => {
+  try {
+      const reviews = await Review.find();
+      res.status(200).json(reviews);
+  } catch (error) {
+      res.status(500).json({ message: 'Error fetching reviews', error });
+  }
+};
+
+// Get reviews for a specific restaurant
+ const getReviewsByRestaurantId = async (req, res) => {
+  try {
+      const reviews = await Review.find({ restaurantId: req.params.restaurantId });
+      res.status(200).json(reviews);
+  } catch (error) {
+      res.status(500).json({ message: 'Error fetching restaurant reviews', error });
+  }
+};
+
+module.exports ={review,getAllReviews,getReviewsByRestaurantId};
