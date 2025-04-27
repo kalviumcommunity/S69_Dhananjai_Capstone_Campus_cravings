@@ -14,7 +14,7 @@ import AddRestaurant from './components/AddRestaurant'
 import RestaurantDetails from './components/RestaurantDetails'
 import MenuAndOperation from './components/MenuAndOperation'
 import RestaurantDocuments from './components/RestaurantDocuments'
-import RestaurantDashboard from './components/RestaurantDocuments'
+import RestaurantDashboard from './components/ResataurantDashboard'
 
 
 function App() {
