@@ -12,7 +12,9 @@ import DeliveryRequests from './components/orderDelivery'
 import OrderDetails from './components/orderDetails'
 import AddRestaurant from './components/AddRestaurant'
 import RestaurantDetails from './components/RestaurantDetails'
-import MenuOperationalDetails from './components/MenuAndOperation'
+import MenuAndOperation from './components/MenuAndOperation'
+import RestaurantDocuments from './components/RestaurantDocuments'
+import RestaurantDashboard from './components/RestaurantDocuments'
 
 
 function App() {
@@ -33,7 +35,10 @@ function App() {
       <Route path="/order/:id" element={<OrderDetails />} /> {/* ✅ Route for Order Details */}
       <Route path="/addres" element={<AddRestaurant/>}/>
       <Route path="/restodet" element={<RestaurantDetails/>}/>
-      <Route path="/menudet" element={<MenuOperationalDetails/>}/>
+      <Route path="/menudet" element={<MenuAndOperation/>}/>
+      <Route path="/resdoc" element ={<RestaurantDocuments/>}/>
+      <Route path="/resdash" element ={<RestaurantDashboard/>}/>
+
     </Routes>
     
     </BrowserRouter>
