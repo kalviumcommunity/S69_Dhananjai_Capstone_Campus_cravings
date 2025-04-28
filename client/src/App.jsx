@@ -15,6 +15,9 @@ import RestaurantDetails from './components/RestaurantDetails'
 import MenuAndOperation from './components/MenuAndOperation'
 import RestaurantDocuments from './components/RestaurantDocuments'
 import RestaurantDashboard from './components/ResataurantDashboard'
+import Cart from './components/Cart'
+import { CartProvider } from './components/FoodStationary'; 
+import Checkout from './components/CheckOut'
 
 
 function App() {
@@ -22,6 +25,7 @@ function App() {
 
   return (
     <BrowserRouter>
+    <CartProvider>
     <Routes>
 
       <Route path='/signup' element={<Signup/>}/>
@@ -38,9 +42,12 @@ function App() {
       <Route path="/menudet" element={<MenuAndOperation/>}/>
       <Route path="/resdoc" element ={<RestaurantDocuments/>}/>
       <Route path="/resdash" element ={<RestaurantDashboard/>}/>
+      <Route path="/cart" element ={<Cart/>}/>
+      <Route path="/checkout" element ={<Checkout/>}/>
+
 
     </Routes>
-    
+    </CartProvider>
     </BrowserRouter>
   )
 }
